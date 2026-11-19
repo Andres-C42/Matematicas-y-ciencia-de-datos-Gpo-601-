@@ -1,3 +1,4 @@
+%%writefile Scores.py
 import numpy as np
 import streamlit as st
 import pandas as pd
@@ -8,12 +9,10 @@ st.image("Cali.png", caption="Predicción de la calificación.")
 st.header('Datos del estudiante')
 
 def user_input_features():
-  # Entrada
-  horas_estudio = st.number_input('Horas de Estudio:', min_value=1, max_value=12, value = 0, step = 1)
-  horas_sueno = st.number_input('Horas de Sueño:',  min_value=4, max_value=10, value = 0, step = 1)
+  horas_estudio = st.number_input('Horas de Estudio:', min_value=1, max_value=12, value = 1, step = 1)
+  horas_sueno = st.number_input('Horas de Sueño:',  min_value=4, max_value=10, value = 4, step = 1)
   asistencia = st.number_input('Porcentaje de Asistencia:', min_value=0, max_value=100, value = 0, step = 1)
   calificacion_previa = st.number_input('Calificacion previa:', min_value=0, max_value=100, value = 0, step = 1)
-
 
   user_input_data = {'hours_studied': horas_estudio,
                      'sleep_hours': horas_sueno,
