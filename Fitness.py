@@ -18,8 +18,8 @@ def user_input_features():
   heart_rate = st.number_input('Frecuencia cardíaca en reposo (lpm):', min_value=40.0, max_value=120.0, value=70.0, step=0.1)
   blood_pressure = st.number_input('Presión arterial sistólica (mmHg):', min_value=80.0, max_value=180.0, value=120.0, step=0.1)
   sleep_hours = st.number_input('Horas de sueño al día:', min_value=4.0, max_value=12.0, value=7.5, step=0.1)
-  nutrition_quality = st.slider('Calidad nutricional (0 a 10):', min_value=0.0, max_value=10.0, value=5.0, step=0.1)
-  activity_index = st.slider('Índice de actividad física (1 a 5):', min_value=1.0, max_value=5.0, value=3.0, step=0.1)
+  nutrition_quality = st.number_input('Calidad nutricional (0 a 10):', min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+  activity_index = st.number_input('Índice de actividad física (1 a 5):', min_value=1.0, max_value=5.0, value=3.0, step=0.1)
   smokes = st.number_input('Fuma?:', min_value=0, max_value=1, value = 0, step = 1)
   gender = st.number_input('Género:', min_value=0, max_value=1, value = 0, step = 1)
 
