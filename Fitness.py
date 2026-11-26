@@ -4,8 +4,9 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.tree import DecisionTreeClassifier
 
+
 st.write(''' # Predicción: ¿La persona está en forma? ''')
-st.write("fitness.jpg", caption='Modelo de árbol de decisión entrenado con el conjunto de datos *Fitness_Classification* (2000 personas).')
+st.image("fitness.jpg", caption="Modelo de árbol de decisión entrenado con el conjunto de datos *Fitness_Classification* (2000 personas).")
 
 st.header('Datos de evaluación')
 
@@ -55,3 +56,4 @@ elif prediction == 1:
   st.write('Está en forma')
 else:
   st.write('Sin predicción')
+
